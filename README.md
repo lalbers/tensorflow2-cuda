@@ -20,7 +20,7 @@ docker run -d -P -p 8022:22 --runtime=nvidia twodarkmessiah/tensorflow2-cuda
 
 >python3 
 
->python~ tensorflow
+>python~ import tensorflow
 
 >python~ print("hello tensorflow")
 
