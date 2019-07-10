@@ -2,7 +2,7 @@ FROM archlinux/base
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 RUN pacman -Sy
-RUN pacman -S nvidia wget python-setuptools python-pip openssh sudo --noconfirm
+RUN pacman -S nvidia wget python-setuptools python-pip openssh sudo nettle --noconfirm
 RUN useradd user 
 RUN echo 'user:changeme' | chpasswd
 #RUN wget https://neweraweb.de/arch/pkg/yay-9.2.0-1-x86_64.pkg.tar.xz
